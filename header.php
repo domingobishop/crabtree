@@ -17,6 +17,23 @@
 
 <body <?php body_class(); ?>>
     <header id="head" class="bc-head">
+        <div class="bc-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="intro-banner">
+                            <h1>
+                                <?php bloginfo('name'); ?>
+                            </h1>
+
+                            <h3>
+                                <?php bloginfo('description'); ?>
+                            <h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <nav class="navbar navbar-default">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
