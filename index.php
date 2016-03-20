@@ -18,12 +18,22 @@
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/slide1.jpg" alt="...">
+                                <div class="carousel-caption">
+                                    <h3>"Absolute Quality... Flavours of deli meats, black cherry, squishy blackberries, various dried peppers and woodsmoke... "</h3>
+                                    <p>James Halliday’s Wine Companion Magazine</p>
+                                </div>
                             </div>
                             <div class="item">
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/slide2.jpg" alt="...">
+                                <div class="carousel-caption">
+                                    <h3>"Veritus neglegentur voluptatibus ne sit, fabellas cotidieque deterruisset id vel, eos enim discere neglegentur an."</h3>
+                                </div>
                             </div>
                             <div class="item">
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/slide3.jpg" alt="...">
+                                <div class="carousel-caption">
+                                    <h3>"Debitis percipitur in vix, sea ut debitis accumsan iracundia."</h3>
+                                </div>
                             </div>
                         </div>
 
