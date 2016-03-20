@@ -30,13 +30,10 @@ html, button, input, select, textarea {
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Droid Serif', serif;
     font-weight: 700;
-    color: #000;
+	color: #222;
 }
 a {
-	color: #000;
-}
-p a {
-	font-weight: 600;
+	color: #e51b15;
 }
 a:hover, a:focus {
 	color: #000;
@@ -111,7 +108,10 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
     box-shadow: 0px 5px 14px #ddd;
 }
 .navbar-default .navbar-nav > li > a {
-    color: #000;
+    color: #222;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+	color: #e51b15;
 }
 .navbar-default .navbar-brand {
     font-weight: 700;
@@ -156,9 +156,15 @@ footer ul {
 .bc-banner img {
 	margin: 1em 0;
 }
-
-.bc-post-loop article {
-    margin-bottom: 2em;
+.bc-box {
+	border: 1px #ddd solid;
+	padding: 1em;
+	box-shadow: 0px 5px 14px #ddd;
+	min-height: 200px;
+	margin-bottom: 1em;
+}
+.carousel {
+	margin: 1em 0;
 }
 
 
