@@ -1,10 +1,40 @@
 <footer id="footer" class="bc-footer">
   <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h4>Heading</h4>
+        <ul>
+          <li>Link</li>
+          <li>Link</li>
+          <li>Link</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h4>Heading</h4>
+        <ul>
+          <li>Link</li>
+          <li>Link</li>
+          <li>Link</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h4>Heading</h4>
+        <ul>
+          <li>Link</li>
+          <li>Link</li>
+          <li>Link</li>
+        </ul>
+      </div>
+    </div>
     <div class="row bc-info">
       <div class="col-lg-8 col-lg-offset-2 text-center">
-        <p><small>Copyright © <?php echo date("Y"); ?> <br>
-           Blank Canvas with Bootstrap <br>
-          Theme by <a href="http://chrisbishop.me.uk/" target="_blank">Chris Bishop</a></small></p>
+        <h4>Crabtree Watervale Wines</h4>
+        <p>
+          North Terrace Watervale, South Australia <br>
+          T: 08 8843 0069  F: 08 884 30144<br>
+          Copyright © <?php echo date("Y"); ?> <br>
+          <small>Website by <a href="http://creatistic.com.au/" target="_blank">Creatistic</a></small>
+        </p>
       </div>
     </div>
   </div>

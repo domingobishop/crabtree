@@ -56,7 +56,7 @@
                     <div class="bc-box">
                         <article>
                             <h3 class="entry-title">
-                                <a href="/about" rel="bookmark">
+                                <a href="/about-us" rel="bookmark">
                                     About Crabtree Watervale Wines
                                 </a>
                             </h3>
@@ -75,7 +75,6 @@
                 <div class="col-md-4">
                     <div class="bc-box">
                         <?php if (have_posts()) : ?>
-                            <?php /* The loop */ ?>
                             <?php query_posts('showposts=1'); ?>
                             <?php while (have_posts()) : the_post(); ?>
                                 <article id="post-<?php the_ID(); ?>">
