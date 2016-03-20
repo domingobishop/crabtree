@@ -17,8 +17,17 @@
 
 <body <?php body_class(); ?>>
     <header id="head" class="bc-head">
+        <div class="bc-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/crabtree-logo.png" alt="Crabtree" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
         <nav class="navbar navbar-default">
-            <div class="container-fluid">
+            <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -32,7 +41,7 @@
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <?php wp_nav_menu(array('menu' => 'primary', 'items_wrap' => '<ul class="nav navbar-nav navbar-right" role="menu">%3$s</ul>', 'container' => false)); ?>
+                    <?php wp_nav_menu(array('menu' => 'primary', 'items_wrap' => '<ul class="nav navbar-nav navbar-left" role="menu">%3$s</ul>', 'container' => false)); ?>
                 </div>
                 <!-- /.navbar-collapse -->
             </div>

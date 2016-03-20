@@ -28,7 +28,7 @@ html, button, input, select, textarea {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif, sansserif;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Arvo', 'Open Sans', Helvetica, Arial, sans-serif, sansserif;
+	font-family: 'Droid Serif', serif;
     font-weight: 700;
     color: #000;
 }
@@ -150,13 +150,13 @@ footer ul {
  */
 
 .bc-banner {
-    background-color: #eee;
-    margin-bottom: 2em;
+	background: url("img/bg.jpg") #eee center center;
+	background-size: cover;
 }
-.intro-banner {
-    text-align: center;
-    color: #000;
+.bc-banner img {
+	margin: 1em 0;
 }
+
 .bc-post-loop article {
     margin-bottom: 2em;
 }
