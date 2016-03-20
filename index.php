@@ -19,11 +19,11 @@
                                             </a>
                                         </div>
                                     <?php endif; ?>
-                                    <h1 class="entry-title">
+                                    <h3 class="entry-title">
                                         <a href="<?php the_permalink(); ?>" rel="bookmark">
                                             <?php the_title(); ?>
                                         </a>
-                                    </h1>
+                                    </h3>
                                     <div class="entry-summary">
                                         <?php the_excerpt(); ?>
                                     </div>
