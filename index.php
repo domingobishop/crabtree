@@ -55,9 +55,10 @@
                 <div class="col-md-4">
                     <div class="bc-box">
                         <article>
+                            <h5>About</h5>
                             <h3 class="entry-title">
                                 <a href="/about-us" rel="bookmark">
-                                    About Crabtree Watervale Wines
+                                    Crabtree Watervale Wines
                                 </a>
                             </h3>
                             <div class="entry-summary">
@@ -78,6 +79,7 @@
                             <?php query_posts('showposts=1'); ?>
                             <?php while (have_posts()) : the_post(); ?>
                                 <article id="post-<?php the_ID(); ?>">
+                                    <h5>News</h5>
                                     <h3 class="entry-title">
                                         <a href="<?php the_permalink(); ?>" rel="bookmark">
                                             <?php the_title(); ?>
@@ -99,6 +101,7 @@
                 <div class="col-md-4">
                     <div class="bc-box">
                         <article>
+                            <h5>Members</h5>
                             <h3 class="entry-title">
                                 <a href="/member" rel="bookmark">
                                     Become a member
