@@ -1,24 +1,84 @@
 <?php get_header(); ?>
 
 <main id="main" class="bc-main" role="main">
-<div id="content" class="bc-content">
-    <section id="post-loop" class="bc-post-loop">
+<div id="content">
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/slide1.jpg" alt="...">
+                                <div class="carousel-caption">
+                                    <h3>"Absolute Quality... Flavours of deli meats, black cherry, squishy blackberries, various dried peppers and woodsmoke... "</h3>
+                                    <p>James Halliday’s Wine Companion Magazine</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/slide2.jpg" alt="...">
+                                <div class="carousel-caption">
+                                    <h3>"Veritus neglegentur voluptatibus ne sit, fabellas cotidieque deterruisset id vel, eos enim discere neglegentur an."</h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/slide3.jpg" alt="...">
+                                <div class="carousel-caption">
+                                    <h3>"Debitis percipitur in vix, sea ut debitis accumsan iracundia."</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="bc-post-loop-wrap">
+                    <div class="bc-box">
+                        <article>
+                            <h3 class="entry-title">
+                                <a href="/about" rel="bookmark">
+                                    About Crabtree Watervale Wines
+                                </a>
+                            </h3>
+                            <div class="entry-summary">
+                                <?php
+                                $your_query = new WP_Query( 'pagename=about' );
+                                while ( $your_query->have_posts() ) : $your_query->the_post();
+                                    the_excerpt();
+                                endwhile;
+                                wp_reset_postdata();
+                                ?>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bc-box">
                         <?php if (have_posts()) : ?>
                             <?php /* The loop */ ?>
                             <?php query_posts('showposts=1'); ?>
                             <?php while (have_posts()) : the_post(); ?>
                                 <article id="post-<?php the_ID(); ?>">
-                                    <?php if (has_post_thumbnail() && !post_password_required() && !is_attachment()) : ?>
-                                        <div class="entry-thumbnail">
-                                            <a href="<?php the_permalink(); ?>">
-                                                <?php the_post_thumbnail('full', array('class' => 'img-responsive')); ?>
-                                            </a>
-                                        </div>
-                                    <?php endif; ?>
                                     <h3 class="entry-title">
                                         <a href="<?php the_permalink(); ?>" rel="bookmark">
                                             <?php the_title(); ?>
@@ -30,8 +90,31 @@
                                 </article>
                             <?php endwhile; ?>
                         <?php else : ?>
-                            <h1>No content</h1>
-                        <?php endif; ?>
+                            <h3>No content</h3>
+                        <?php
+                            endif;
+                            wp_reset_postdata();
+                        ?>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bc-box">
+                        <article>
+                            <h3 class="entry-title">
+                                <a href="/member" rel="bookmark">
+                                    Become a member
+                                </a>
+                            </h3>
+                            <div class="entry-summary">
+                                <?php
+                                $your_query = new WP_Query( 'pagename=about' );
+                                while ( $your_query->have_posts() ) : $your_query->the_post();
+                                    the_excerpt();
+                                endwhile;
+                                wp_reset_postdata();
+                                ?>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
