@@ -168,6 +168,7 @@ footer ul {
 }
 .bc-box {
 	border: 1px #ddd solid;
+	border-radius: 3px;
 	padding: 1em;
 	box-shadow: 0px 5px 14px #ddd;
 	min-height: 240px;
@@ -175,6 +176,9 @@ footer ul {
 }
 .carousel {
 	margin: 1.6em 0;
+}
+.carousel .item img {
+	border-radius: 3px;
 }
 .carousel-caption p, .carousel-caption h3 {
 	color: #fff;
