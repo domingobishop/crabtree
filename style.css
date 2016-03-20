@@ -150,12 +150,13 @@ footer ul {
  */
 
 .bc-banner {
-    background-color: #eee;
+	background: url("img/bg.jpg") #eee center center;
+	background-size: cover;
 }
-.intro-banner {
-    text-align: center;
-    color: #000;
+.bc-banner img {
+	margin: 1em 0;
 }
+
 .bc-post-loop article {
     margin-bottom: 2em;
 }
