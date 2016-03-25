@@ -155,7 +155,7 @@ footer ul {
 	content: "";
 	background: url("img/bg.jpg") #eee center center;
 	background-size: cover;
-	opacity: 0.4;
+	opacity: 0.2;
 	top: 0;
 	left: 0;
 	bottom: 0;
@@ -165,6 +165,10 @@ footer ul {
 }
 .bc-banner img {
 	margin: 1em 0;
+}
+.tag-line p {
+	margin: 1em 0;
+	color: #e51b15;
 }
 .bc-box {
 	border: 1px #ddd solid;
@@ -181,6 +185,7 @@ footer ul {
 	border-radius: 3px;
 }
 .carousel-caption p, .carousel-caption h3 {
+	font-size: 200%;
 	color: #fff;
 	text-shadow: 5px 5px 5px #222;
 }
