@@ -58,4 +58,14 @@ function my_add_excerpts_to_pages() {
     add_post_type_support( 'page', 'excerpt' );
 }
 
-?>
+function bc_widgets_init() {
+    register_sidebar( array(
+        'name' => 'Sidebar',
+        'id' => 'bc_sidebar',
+        'before_widget' => '<div class="widget-area">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>',
+    ) );
+}
+add_action( 'widgets_init', 'bc_widgets_init' );
