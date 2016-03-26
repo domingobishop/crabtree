@@ -28,8 +28,8 @@ html, button, input, select, textarea {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif, sansserif;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Droid Serif', serif;
-    font-weight: 700;
+	font-family: 'Lora', serif;
+    font-weight: 400;
 	color: #222;
 }
 a {
@@ -101,6 +101,8 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
 
 .navbar {
 	margin: 0;
+	font-family: 'Lora', serif;
+	font-weight: 400;
 	text-transform: uppercase;
 	font-weight: 500;
 	border-radius: 0;
@@ -113,8 +115,14 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
 	color: #e51b15;
 }
-.navbar-default .navbar-brand {
-    color: #000;
+.navbar-default a.navbar-brand {
+    color: #e51b15;
+	text-transform: none;
+	font-family: 'Lora', serif;
+	font-weight: 400;
+}
+.navbar-default a:hover.navbar-brand {
+	color: #000;
 }
 
 /**
@@ -155,7 +163,7 @@ footer ul {
 	content: "";
 	background: url("img/bg.jpg") #eee center center;
 	background-size: cover;
-	opacity: 0.4;
+	opacity: 0.2;
 	top: 0;
 	left: 0;
 	bottom: 0;
@@ -166,8 +174,13 @@ footer ul {
 .bc-banner img {
 	margin: 1em 0;
 }
+.tag-line p {
+	margin: 1em 0;
+	color: #e51b15;
+}
 .bc-box {
 	border: 1px #ddd solid;
+	border-radius: 3px;
 	padding: 1em;
 	box-shadow: 0px 5px 14px #ddd;
 	min-height: 240px;
@@ -176,7 +189,12 @@ footer ul {
 .carousel {
 	margin: 1.6em 0;
 }
-.carousel-caption p, .carousel-caption h3 {
+.carousel .item img {
+	border-radius: 3px;
+}
+.carousel-caption h3 {
+	font-size: 200%;
+	font-weight: 700;
 	color: #fff;
 	text-shadow: 5px 5px 5px #222;
 }

@@ -37,10 +37,10 @@
                             data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
                     </button>
-                    <!-- <a class="navbar-brand" href="<?php bloginfo('siteurl'); ?>/"
+                    <a class="navbar-brand" href="<?php bloginfo('siteurl'); ?>/"
                        title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
-                        <?php bloginfo('name'); ?>
-                    </a> -->
+                        Crabtree Watervale Wines
+                    </a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->

@@ -4,7 +4,7 @@
 function bc_styles() {
     wp_register_style( 'bc-styles', get_template_directory_uri() . '/style.css', array(), 1.0, 'all' );
     wp_register_style( 'google-fonts',
-        'https://fonts.googleapis.com/css?family=Droid+Serif:400,700|Open+Sans:400,700,400italic', array(), 1.0, 'all' );
+        'https://fonts.googleapis.com/css?family=Lora:400,700|Droid+Serif:400,700|Open+Sans:400,700,400italic', array(), 1.0, 'all' );
     wp_enqueue_style( 'bc-styles' );
     wp_enqueue_style( 'google-fonts' );
 }
@@ -58,4 +58,14 @@ function my_add_excerpts_to_pages() {
     add_post_type_support( 'page', 'excerpt' );
 }
 
-?>
+function bc_widgets_init() {
+    register_sidebar( array(
+        'name' => 'Sidebar',
+        'id' => 'bc_sidebar',
+        'before_widget' => '<div class="widget-area">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4>',
+        'after_title' => '</h4>',
+    ) );
+}
+add_action( 'widgets_init', 'bc_widgets_init' );

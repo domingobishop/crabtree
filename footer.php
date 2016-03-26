@@ -2,11 +2,19 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4">
-        <h4>Heading</h4>
+        <h4>Wines</h4>
         <ul>
-          <li>Link</li>
-          <li>Link</li>
-          <li>Link</li>
+          <li>Hilltop Riesling</li>
+          <li>Watervale Riesling</li>
+          <li>Robert Crabtree Riesling</li>
+          <li>Hilltop Rosé</li>
+          <li>Watervale Tempranillo</li>
+          <li>Hilltop Cabernet</li>
+          <li>Watervale Cabernet</li>
+          <li>Hilltop Shiraz</li>
+          <li>Watervale Shiraz</li>
+          <li>Vintage Fortified Shiraz</li>
+          <li>N.V. Muscat</li>
         </ul>
       </div>
       <div class="col-md-4">
@@ -29,6 +37,8 @@
     <div class="row bc-info">
       <div class="col-lg-8 col-lg-offset-2 text-center">
         <h4>Crabtree Watervale Wines</h4>
+        <p><a href="https://twitter.com/CrabtreeWines" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/facebook.png"></a>
+          <a href="https://www.facebook.com/CrabtreeWines" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/twitter.png"></a></p>
         <p>
           North Terrace Watervale, South Australia <br>
           T: 08 8843 0069  F: 08 884 30144<br>
