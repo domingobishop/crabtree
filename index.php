@@ -56,7 +56,7 @@
                         <article>
                             <h5>About</h5>
                             <h3 class="entry-title">
-                                <a href="/about-us" rel="bookmark">
+                                <a href="#" rel="bookmark">
                                     Crabtree Watervale Wines
                                 </a>
                             </h3>
@@ -102,8 +102,8 @@
                         <article>
                             <h5>Members</h5>
                             <h3 class="entry-title">
-                                <a href="/member" rel="bookmark">
-                                    Become a member
+                                <a href="#" rel="bookmark">
+                                    Join our Wine Club
                                 </a>
                             </h3>
                             <div class="entry-summary">

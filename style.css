@@ -28,8 +28,8 @@ html, button, input, select, textarea {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif, sansserif;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Droid Serif', serif;
-    font-weight: 700;
+	font-family: 'Lora', serif;
+    font-weight: 400;
 	color: #222;
 }
 a {
@@ -101,6 +101,8 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
 
 .navbar {
 	margin: 0;
+	font-family: 'Lora', serif;
+	font-weight: 400;
 	text-transform: uppercase;
 	font-weight: 500;
 	border-radius: 0;
@@ -113,8 +115,14 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
 	color: #e51b15;
 }
-.navbar-default .navbar-brand {
-    color: #000;
+.navbar-default a.navbar-brand {
+    color: #e51b15;
+	text-transform: none;
+	font-family: 'Lora', serif;
+	font-weight: 400;
+}
+.navbar-default a:hover.navbar-brand {
+	color: #000;
 }
 
 /**
@@ -184,8 +192,9 @@ footer ul {
 .carousel .item img {
 	border-radius: 3px;
 }
-.carousel-caption p, .carousel-caption h3 {
+.carousel-caption h3 {
 	font-size: 200%;
+	font-weight: 700;
 	color: #fff;
 	text-shadow: 5px 5px 5px #222;
 }
