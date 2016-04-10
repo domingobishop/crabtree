@@ -1,7 +1,7 @@
 <footer id="footer" class="bc-footer">
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-sm-6 col-md-3">
         <h4>Wines</h4>
         <ul>
           <li>Hilltop Riesling</li>
@@ -17,7 +17,7 @@
           <li>N.V. Muscat</li>
         </ul>
       </div>
-      <div class="col-md-4">
+      <div class="col-sm-6 col-md-3">
         <h4>Heading</h4>
         <ul>
           <li>Link</li>
@@ -25,7 +25,15 @@
           <li>Link</li>
         </ul>
       </div>
-      <div class="col-md-4">
+      <div class="col-sm-6 col-md-3">
+        <h4>Heading</h4>
+        <ul>
+          <li>Link</li>
+          <li>Link</li>
+          <li>Link</li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-md-3">
         <h4>Heading</h4>
         <ul>
           <li>Link</li>
