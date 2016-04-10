@@ -56,7 +56,7 @@
                         <article>
                             <h5>About</h5>
                             <h3 class="entry-title">
-                                <a href="#" rel="bookmark">
+                                <a href="/about/" rel="bookmark">
                                     Crabtree Watervale Wines
                                 </a>
                             </h3>
@@ -102,13 +102,13 @@
                         <article>
                             <h5>Members</h5>
                             <h3 class="entry-title">
-                                <a href="#" rel="bookmark">
+                                <a href="/join/" rel="bookmark">
                                     Join our Wine Club
                                 </a>
                             </h3>
                             <div class="entry-summary">
                                 <?php
-                                $your_query = new WP_Query( 'pagename=about' );
+                                $your_query = new WP_Query( 'pagename=join' );
                                 while ( $your_query->have_posts() ) : $your_query->the_post();
                                     the_excerpt();
                                 endwhile;
