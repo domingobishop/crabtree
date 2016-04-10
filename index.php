@@ -56,7 +56,7 @@
                         <article>
                             <h5>About</h5>
                             <h3 class="entry-title">
-                                <a href="/about/" rel="bookmark">
+                                <a href="/index.php/about/" rel="bookmark">
                                     Crabtree Watervale Wines
                                 </a>
                             </h3>
@@ -80,7 +80,7 @@
                                 <article id="post-<?php the_ID(); ?>">
                                     <h5>News</h5>
                                     <h3 class="entry-title">
-                                        <a href="<?php the_permalink(); ?>" rel="bookmark">
+                                        <a href="https://crabtreewatervale.wordpress.com/" rel="bookmark" target="_blank">
                                             <?php the_title(); ?>
                                         </a>
                                     </h3>
@@ -102,7 +102,7 @@
                         <article>
                             <h5>Members</h5>
                             <h3 class="entry-title">
-                                <a href="/join/" rel="bookmark">
+                                <a href="/index.php/join/" rel="bookmark">
                                     Join our Wine Club
                                 </a>
                             </h3>

@@ -11,10 +11,11 @@ get_header(); ?>
                 <div class="row">
                         <?php
                         $args = array(  'posts_per_page' => 12,
-                                        'category' => 16,
+                                        'category' => 3,
                                         'post_type' => 'page',
                                         'post_status' => 'publish',
-                                        'orderby' => 'menu_order'
+                                        'orderby' => 'menu_order',
+                                        'order' => 'ASC',
                         );
                         $wineposts = get_posts( $args );
                         foreach ( $wineposts as $post ) : setup_postdata( $post ); ?>
