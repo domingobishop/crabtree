@@ -1,46 +1,7 @@
 <footer id="footer" class="bc-footer">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 col-md-3">
-        <h4>Wines</h4>
-        <ul>
-          <li>Hilltop Riesling</li>
-          <li>Watervale Riesling</li>
-          <li>Robert Crabtree Riesling</li>
-          <li>Hilltop Rosé</li>
-          <li>Watervale Tempranillo</li>
-          <li>Hilltop Cabernet</li>
-          <li>Watervale Cabernet</li>
-          <li>Hilltop Shiraz</li>
-          <li>Watervale Shiraz</li>
-          <li>Vintage Fortified Shiraz</li>
-          <li>N.V. Muscat</li>
-        </ul>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <h4>Heading</h4>
-        <ul>
-          <li>Link</li>
-          <li>Link</li>
-          <li>Link</li>
-        </ul>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <h4>Heading</h4>
-        <ul>
-          <li>Link</li>
-          <li>Link</li>
-          <li>Link</li>
-        </ul>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <h4>Heading</h4>
-        <ul>
-          <li>Link</li>
-          <li>Link</li>
-          <li>Link</li>
-        </ul>
-      </div>
+      <?php dynamic_sidebar( 'bc_footer' ); ?>
     </div>
     <div class="row bc-info">
       <div class="col-lg-8 col-lg-offset-2 text-center">

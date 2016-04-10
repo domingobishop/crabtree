@@ -1,31 +1,38 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Template Name: Wines
+ *
+ */
+get_header(); ?>
 
-    <main id="main" class="bc-main" role="main">
+    <main id="main" class="wines" role="main">
         <div id="content" class="bc-content">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8">
-                        <?php while (have_posts()) : the_post(); ?>
-                            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                                <?php if (has_post_thumbnail() && !post_password_required() && !is_attachment()) : ?>
+                        <?php
+                        $args = array(  'posts_per_page' => 12,
+                                        'category' => 16,
+                                        'post_type' => 'page',
+                                        'post_status' => 'publish',
+                                        'orderby' => 'menu_order'
+                        );
+                        $wineposts = get_posts( $args );
+                        foreach ( $wineposts as $post ) : setup_postdata( $post ); ?>
+                            <div class="col-xs-6 col-sm-2">
+                                <div class="box clearfix text-center">
                                     <div class="entry-thumbnail">
                                         <a href="<?php the_permalink(); ?>">
-                                            <?php the_post_thumbnail('full', array('class' => 'img-responsive')); ?>
+                                            <?php echo get_the_post_thumbnail( $post->ID, 'wine-thumbnail' ); ?>
                                         </a>
                                     </div>
-                                <?php endif; ?>
-                                <div class="page-header">
-                                    <h1>
-                                        <?php the_title(); ?>
-                                    </h1>
+                                    <div class="entry-content">
+                                        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                                        <a href="<?php the_permalink(); ?>" class="btn btn-default btn-xs">Read more</a>
+                                    </div>
                                 </div>
-                                <div class="entry-content">
-                                    <?php the_content(); ?>
-                                </div>
-                            </article>
-                        <?php endwhile; ?>
-                    </div>
-                    <?php get_sidebar(); ?>
+                            </div>
+                        <?php endforeach;
+                        wp_reset_postdata();?>
                 </div>
             </div>
         </div>

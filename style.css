@@ -210,9 +210,18 @@ footer ul {
 }
 
 /**
- * Sidebar & Widgets
+ * Wines
  * ----------------------------------------------------------------------------
  */
+
+.wines .entry-content {
+	height: 148px;
+	overflow: hidden;
+}
+
+.wines .entry-content h3 {
+	font-size: 1.4em;
+}
 
 
  /**

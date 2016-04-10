@@ -67,5 +67,23 @@ function bc_widgets_init() {
         'before_title' => '<h4>',
         'after_title' => '</h4>',
     ) );
+    register_sidebar( array(
+        'name' => 'Footer',
+        'id' => 'bc_footer',
+        'before_widget' => '<div class="col-sm-6 col-md-4 widget-area">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4>',
+        'after_title' => '</h4>',
+    ) );
 }
 add_action( 'widgets_init', 'bc_widgets_init' );
+
+function add_categories_to_pages() {
+    register_taxonomy_for_object_type( 'category', 'page' );
+}
+add_action( 'init', 'add_categories_to_pages' );
+
+add_theme_support( 'post-thumbnails' );
+add_image_size( 'wine-thumbnail', 80, 295 ); // Soft Crop Mode
+
+
