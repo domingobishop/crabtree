@@ -124,6 +124,9 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
 .navbar-default a:hover.navbar-brand {
 	color: #000;
 }
+.navbar-default .navbar-toggle {
+	background: #222;
+}
 
 /**
  * Header
@@ -225,6 +228,12 @@ footer ul {
 
 .wines .entry-content h3 {
 	font-size: 1.4em;
+}
+
+@media (max-width: 798px) {
+	.wines .entry-content h3 {
+		font-size: 1em;
+	}
 }
 
 

@@ -11,7 +11,7 @@ get_header(); ?>
                 <div class="row">
                         <?php
                         $args = array(  'posts_per_page' => 12,
-                                        'category' => 3,
+                                        'category' => 16, //3,
                                         'post_type' => 'page',
                                         'post_status' => 'publish',
                                         'orderby' => 'menu_order',
