@@ -234,6 +234,9 @@ footer ul {
 	.wines .entry-content h3 {
 		font-size: 1em;
 	}
+	.bc-box {
+		min-height: auto;
+	}
 }
 
 

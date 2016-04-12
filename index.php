@@ -6,8 +6,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <img scr="<?php echo get_template_directory_uri(); ?>/img/home.jpg" class="visible-xs img-responsive" alt="Crabtree Wines">
-                    <div id="carousel-example-generic" class="carousel slide visible-sm" data-ride="carousel">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/home.jpg" class="visible-xs img-responsive" alt="Crabtree Wines">
+                    <div id="carousel-example-generic" class="carousel slide visible-sm visible-md visible-lg" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
                             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
